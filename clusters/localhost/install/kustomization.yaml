@@ -10,3 +10,6 @@ commonLabels:
 
 resources:
   - ../../../apps/dr-ambulance-ufe
+
+components:
+  - ../../../components/version-developers
