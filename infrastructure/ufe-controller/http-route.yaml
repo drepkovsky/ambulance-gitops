@@ -4,28 +4,30 @@ metadata:
   name: ufe-controller
 spec:
   parentRefs:
-    - name: wac-hospital-gateway
-      namespace: wac-hospital
-    - name: wac-hospital-gateway  # Hack to make it work for common cluster
-      namespace: wac-hospital-system
+  - name: wac-hospital-gateway
+    namespace: wac-hospital
+  - name: wac-hospital-gateway # Hack to make it work for common cluster
+    namespace: wac-hospital-system
   rules:
-    - matches:
-        - path:
-            type: PathPrefix
-            value: /ui
-      backendRefs:
-        - group: ""
-          kind: Service
-          name: ufe-controller
-          port: 80
+  - matches:
+    - path:
+        type: PathPrefix
+        value: /ui
+    backendRefs:
+    - group: ""
+      kind: Service
+      name: ufe-controller
+      port: 80
 
-    - matches:
-      - path:
-          type: Exact
-          value: /
-      filters:
-      - type: RequestRedirect
-        requestRedirect:
-          path:
-            type: ReplaceFullPath
-            replaceFullPath: /ui
+  - matches:
+    - path:
+        type: Exact
+        value: /
+    filters:
+    - type: RequestRedirect
+      requestRedirect:
+        path:
+          type: ReplaceFullPath
+          replaceFullPath: /ui
+        scheme: https
+        port: 443
