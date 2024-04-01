@@ -7,7 +7,7 @@ images:
 
   - name: drepkovsky/ambulance-ufe
     newName: drepkovsky/ambulance-ufe # {"$imagepolicy":  "wac-hospital:ambulance-ufe:name"}
-    newTag: main.20240304.1149 # {"$imagepolicy": "wac-hospital:ambulance-ufe:tag"}
+    newTag: main.20240318.1305 # {"$imagepolicy": "wac-hospital:ambulance-ufe:tag"}
 
   - name: milung/ufe-controller
     newName: milung/ufe-controller # {"$imagepolicy":  "wac-hospital:ufe-controller:name"}
