@@ -11,7 +11,7 @@ spec:
     - element: dr-ambulance-wl-app # element, ktorý bude vložený na stránku
       attributes:
         - name: api-base
-          value: http://localhost:5000/api
+          value: http://localhost:30081/api
         - name: ambulance-id
           value: bobulova
           # pri navigácii na zoznam čakajúcich
