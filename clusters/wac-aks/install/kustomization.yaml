@@ -8,7 +8,8 @@ commonLabels:
   app.kubernetes.io/name: dr-ambulance-wl
 
 resources:
-  - ../../../apps/dr-ambulance-ufe
+- ../../../apps/dr-ambulance-ufe
+- ../../../apps/dr-ambulance-webapi
 
 components:
-  - ../../../components/version-release
+- ../../../components/version-release
