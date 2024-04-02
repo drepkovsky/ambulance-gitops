@@ -7,7 +7,7 @@ images:
 
 - name: drepkovsky/ambulance-wl-webapi
   newName: drepkovsky/ambulance-wl-webapi
-  newTag: 1.1.0
+  newTag: 1.1.1
 
 
 replacements:
