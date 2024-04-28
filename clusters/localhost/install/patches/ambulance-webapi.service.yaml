@@ -1,11 +1,11 @@
 kind: Service
 apiVersion: v1
 metadata:
- name: dr-ambulance-webapi
+  name: dr-ambulance-webapi
 spec:
- type: NodePort
- ports:
- - name: http
-   protocol: TCP
-   port: 80
-   nodePort: 30081
+  type: NodePort
+  ports:
+  - name: http
+    protocol: TCP
+    port: 80
+    nodePort: 30050
