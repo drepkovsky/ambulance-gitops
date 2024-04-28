@@ -11,6 +11,7 @@ resources:
 - ../../../apps/dr-ambulance-ufe
 - ../../../apps/dr-ambulance-webapi
 - ../../../apps/mongo-express
+- ../../../apps/http-echo
 
 
 components:
